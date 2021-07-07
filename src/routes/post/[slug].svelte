@@ -9,7 +9,7 @@
 
    export async function preload({params, query}) {
        //console.log(params);
-       const res = await this.fetch(`http://jsonplaceholder.typicode.com/posts/${params.slug}`);
+       const res = await this.fetch(`https://jsonplaceholder.typicode.com/posts/${params.slug}`);
        const data = await res.json()
       
        return {postInfo : data};

@@ -15,7 +15,7 @@
   let modalProps = [];
 
   onMount(async () => {
-    const res = await fetch("http://jsonplaceholder.typicode.com/posts");
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const json = await res.json();
     posts = json;
     //console.log(posts);

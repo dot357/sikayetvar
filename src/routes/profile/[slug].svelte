@@ -5,7 +5,7 @@
   export async function preload({ params, query }) {
     //console.log(params);
     const res = await this.fetch(
-      `http://jsonplaceholder.typicode.com/users/${params.slug}`
+      `https://jsonplaceholder.typicode.com/users/${params.slug}`
     );
     const data = await res.json();
 
